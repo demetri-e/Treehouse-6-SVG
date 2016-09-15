@@ -1,0 +1,178 @@
+ /* Tested in Safari, Chrome, Firefly, Opera */
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('svgs/background.svg') #edeff0;
+  background-size: 5%;
+}
+
+.container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px; 
+  margin: auto;
+  transform-origin: 75px 75px;
+  animation: spin 1.5s ease-in-out;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg);}
+	80% { transform: rotate(440deg);}
+	100% { transform: rotate(360deg);}
+}
+
+
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  transition: .5s ease-out;
+  }
+  a:hover {
+    color: #111;
+  }
+
+header {
+  padding-top: 10px;
+}
+
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+
+  /* Nav Icons */
+
+  header nav .icon {
+    height: 13px;
+  }
+
+  header nav .contact {
+    height: 14px;
+  }
+
+  .icon-bg {
+  	fill:#39ADD1;
+    transition: .5s ease-out;
+  }
+
+  .icon-bg:hover {
+    fill: #111;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .title {
+    line-height: 1em;
+  }
+
+  .smallscreen-logo {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #EAAA7F;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .logo .st0{fill:#BA8058;}
+  .logo .st1{fill:#EAAA7F; opacity: 0;}
+  .logo .st2{fill:#F4C6A6;}
+
+main {
+  padding-top: 50px;
+}
+  h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding: 0;
+  }
+    main li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 20px;
+    }
+      main li .corgi-image {
+        margin-bottom: 15px;
+        width: 170px;
+      }
+
+ 	/* Red Corgi */
+     .red .st0{fill:#BA8058;}
+     .red .st1{fill:#FBFEFF;}
+     .red .st2{fill:#2D3339;}
+     .red .st3{fill:#EAAA7F;}
+
+     /* Fawn Corgi */
+
+	.fawn .st0{fill:#EAAA7F;}
+	.fawn .st1{fill:#FBFEFF;}
+	.fawn .st2{fill:#2D3339;}
+	.fawn .st3{fill:#F4C6A6;}
+
+	/* Sable Corgi */
+
+    .sable .st0{fill:#844B24;}
+    .sable .st1{fill:#FBFEFF;}
+    .sable .st2{fill:#2D3339;}
+    .sable .st3{fill:#BA8058;}
+
+    /* Black and Tan Corgi */
+
+    .blacktan .st0{fill:#BA8058;}
+    .blacktan .st1{fill:#52595F;}
+    .blacktan .st2{fill:#FBFEFF;}
+    .blacktan .st3{fill:#2D3339;}
+
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/*-------------------*/
+
+@media only screen and (min-width: 420px) {
+
+  .smallscreen-logo {
+    display: none;
+  }
+
+  .logo{
+  	-webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+  }
+
+  .logo .st1 {
+    opacity: 1;
+  }
+}
